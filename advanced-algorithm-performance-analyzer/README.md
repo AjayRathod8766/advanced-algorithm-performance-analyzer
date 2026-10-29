@@ -1,27 +1,31 @@
 # Advanced Algorithm Performance Analyzer
 
-A production-ready benchmarking tool for analyzing and comparing sorting algorithms.
+A benchmarking utility for comparing the runtime of sorting algorithms on large datasets.
 
-## 🚀 Features
-- Benchmarks multiple sorting algorithms
+## Features
+
+- Benchmarks Bubble Sort, Insertion Sort, Merge Sort, and Quick Sort
 - Handles datasets up to 100,000 elements
-- Clean modular architecture
-- Performance comparison output table
-- Optimized logic reducing execution overhead by ~25%
+- Provides clean execution-time output
+- Separates algorithm logic from benchmark execution
 
-## 🛠 Algorithms Implemented
-- Bubble Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
+## Run the benchmark
 
-## 📦 Usage
+```bash
+python benchmark.py
+```
 
-Run benchmark:
+## Example
 
-    python benchmark.py
+```text
+Algorithm Performance Benchmark (Dataset size: 100,000)
+-------------------------------------------------------
+Bubble Sort (sample: 1000)    0.0412 seconds
+Insertion Sort (sample: 1000) 0.0298 seconds
+Merge Sort                   0.0165 seconds
+Quick Sort                   0.0112 seconds
+```
 
-## 📊 Engineering Highlights
-- Designed modular separation between algorithm implementations and benchmarking logic
-- Benchmarked algorithms on large datasets (100k elements)
-- Reduced overhead via optimized dataset copying and controlled sampling
+## Notes
+
+This project is intended to demonstrate performance analysis, algorithm comparison, and Python benchmarking best practices.
