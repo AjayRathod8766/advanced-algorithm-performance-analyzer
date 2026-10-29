@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advanced-algorithm-performance-analyzer"
+version = "0.1.0"
+description = "Benchmarking tool for comparing sorting algorithm performance on large datasets."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Ajay Rathod" }]
+license = { text = "MIT" }
+keywords = ["sorting", "algorithms", "benchmarking", "performance"]
+
+[tool.setuptools]
+py-modules = ["benchmark", "algorithms"]
